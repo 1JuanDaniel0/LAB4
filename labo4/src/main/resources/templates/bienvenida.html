@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenidos a Teleco-Manager</title>
+</head>
+<body>
+<style>
+    li{
+        float: left;
+        display: inline;
+    }
+    ul{
+        list-style-type: none;
+    }
+    a{
+        display: block;
+        padding: 10px;
+    }
+</style>
+    <nav th:fragment="navbarFragment" style="margin: 0; padding: 0; justify-content: center">
+        <ul>
+            <li>
+                <a th:ref="@{/inicio/navbar}">Torres</a>
+            </li>
+            <li>
+                <a th:ref="#">Proveedores</a>
+            </li>
+        </ul>
+
+    </nav>
+    <h1>Bienvenidos a Teleco-Manager</h1>
+</body>
+
+</html>
